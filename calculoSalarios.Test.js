@@ -12,8 +12,7 @@ describe('calculoSalarios', () => {
     test('Desconto DBA', () => {
         cargo = 2;
         salario = 1500.00;
-        //salarioFinal = calculoSalarios.calcularSalario(cargo, salario);
-        salarioFinal = 1275.00;
+        salarioFinal = calculoSalarios.calcularSalario(cargo, salario);
         expect(salarioFinal).toBeCloseTo(1275.00);
     })
 })
