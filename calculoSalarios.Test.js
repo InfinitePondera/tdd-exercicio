@@ -3,9 +3,10 @@ import calculoSalarios from calculoSalarios;
 
 describe('calculoSalarios', () => {
     test('Desconto desenvolvedor', () => {
-        tipo = 1;
+        cargo = 1;
         salario = 3000.00;
-        salarioFinal = calculoSalarios.calcularSalario(tipo, salario);
-        expect(salarioFinal).toBeCloseTo(2400.00)
+        //salarioFinal = calculoSalarios.calcularSalario(cargo, salario);
+        salarioFinal = 2400.00;
+        expect(salarioFinal).toBeCloseTo(2400.00);
     })
 })
