@@ -19,7 +19,7 @@ describe('calculoSalarios', () => {
     test('Desconto testador', () => {
         cargo = 3;
         salario = 2000.00;
-        salarioFinal = 1500.00;
+        salarioFinal = calculoSalarios.calcularSalario(cargo, salario);
         expect(salarioFinal).toBeCloseTo(1500.00);
     })
 })
