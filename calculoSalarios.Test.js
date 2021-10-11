@@ -22,4 +22,11 @@ describe('calculoSalarios', () => {
         salarioFinal = calculoSalarios.calcularSalario(cargo, salario);
         expect(salarioFinal).toBeCloseTo(1500.00);
     })
+
+    test('Desconto gerente', () => {
+        cargo = 4;
+        salario = 5000.00;
+        salarioFinal = calculoSalarios.calcularSalario(cargo, salario);
+        expect(salarioFinal).toBeCloseTo(3500.00);
+    })
 })
