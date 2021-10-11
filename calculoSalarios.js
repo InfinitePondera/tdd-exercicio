@@ -12,10 +12,10 @@ function calcularSalario(cargo, salario){
             if(salario >= 2000.00) salario -= (salario * 0.25);
             else salario -= (salario * 0.15);
             break;
-        //case 4:
-            //if(salario >= 5000.00) salario -= (salario * 0.30);
-            //else salario -= (salario * 0.20);
-            //break;
+        case 4:
+            if(salario >= 5000.00) salario -= (salario * 0.30);
+            else salario -= (salario * 0.20);
+            break;
         default:
             console.log('cargo nao informado');
     }
